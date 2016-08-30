@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Odd Tree Simulation</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>	
+	<script type="text/javascript" src="editor.js"></script>
+</head>
+
+<body>		
+	<table>
+		<tr>
+			<th>Odd Tree Simulation</th>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="oddNumber" placeholder="Enter an Odd Number"  id="oddNumber" maxlength="30" />
+				<p id="invalid_odd_number"></p> 
+			</td>			
+		</tr>
+		<tr>
+			<td>
+				<button class="btnRestart" id="restart" onclick="setup()">Start</button>
+				<button class="btnContinue" id="continue" onclick="continueRun()" disabled=true>Continue</button>	
+			</td>
+		</tr>
+	</table>
+	
+	<div class="circle" id="myCircle"></div>
+	<h1 class="calculation" id="textCalc"></h1>		
+	
+</body>
+</html>
